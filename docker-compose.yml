@@ -1,0 +1,10 @@
+version: "2"
+services:
+  node:
+    image: "anthonyscinocco/node-portfolio"
+    container_name: "node-portfolio"
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./code:/usr/src/app"
+    command: "npm start"
