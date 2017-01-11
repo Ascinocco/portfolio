@@ -58,16 +58,54 @@
 
 	var _vueResource2 = _interopRequireDefault(_vueResource);
 
+	var _home = __webpack_require__(5);
+
+	var _home2 = _interopRequireDefault(_home);
+
+	var _contact = __webpack_require__(12);
+
+	var _contact2 = _interopRequireDefault(_contact);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_vue2.default.use(_vueRouter2.default);
+	_vue2.default.use(_vueRouter2.default); // import Vue from 'vue'
+	// import VueRouter from 'vue-router'
+	// import VueResource from 'vue-resource'
+	//
+	// import routes from './routes/config'
+	// import Home from './components/home.vue'
+	//
+	// Vue.use(VueRouter);
+	// Vue.use(VueResource);
+	//
+	//
+	// // var Home    = Vue.component('home', require('./components/home.vue'));
+	// // var Contact = Vue.component('contact', require('./components/contact.vue'));
+	//
+	// const router = new VueRouter({
+	//     routes: routes,
+	//     mode: 'history',
+	//     render: h => h(Home),
+	// });
+	//
+	// const app = new Vue({
+	//     router: router
+	// }).$mount('#app');
+
 	_vue2.default.use(_vueResource2.default);
 
-	_vue2.default.component('app', __webpack_require__(5));
-
-	new _vue2.default({
-	    el: '#app'
+	var router = new _vueRouter2.default({
+	    mode: 'hash',
+	    base: window.location.href,
+	    routes: [{ path: '/', component: _home2.default }, { path: '/contact', component: _contact2.default }]
 	});
+
+	var app = new _vue2.default({
+	    router: router,
+	    data: {
+	        message: 'Vue is working!! Yaaayyy!'
+	    }
+	}).$mount('#app');
 
 /***/ },
 /* 1 */
@@ -12393,7 +12431,7 @@
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/Users/anthony/Documents/Personal/Projects/2017/portfolio/code/client/src/components/app.vue"
+	__vue_options__.__file = "/Users/anthony/Documents/Personal/Projects/2017/portfolio/code/client/src/components/home.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 
@@ -12404,12 +12442,12 @@
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-115e11a8", __vue_options__)
+	    hotAPI.createRecord("data-v-da508938", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-115e11a8", __vue_options__)
+	    hotAPI.reload("data-v-da508938", __vue_options__)
 	  }
 	})()}
-	if (__vue_options__.functional) {console.error("[vue-loader] app.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+	if (__vue_options__.functional) {console.error("[vue-loader] home.vue: functional components are not supported and should be defined in plain js files using render functions.")}
 
 	module.exports = __vue_exports__
 
@@ -12430,8 +12468,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-115e11a8!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./app.vue", function() {
-				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-115e11a8!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./app.vue");
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-da508938!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./home.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-da508938!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./home.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -12751,7 +12789,7 @@
 	exports.default = {
 	  data: function data() {
 	    return {
-	      msg: 'Hello from vue-loader!'
+	      msg: 'Home Page!'
 	    };
 	  }
 	};
@@ -12769,7 +12807,135 @@
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-115e11a8", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-da508938", module.exports)
+	  }
+	}
+
+/***/ },
+/* 12 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __vue_exports__, __vue_options__
+	var __vue_styles__ = {}
+
+	/* styles */
+	__webpack_require__(13)
+
+	/* script */
+	__vue_exports__ = __webpack_require__(15)
+
+	/* template */
+	var __vue_template__ = __webpack_require__(16)
+	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+	if (
+	  typeof __vue_exports__.default === "object" ||
+	  typeof __vue_exports__.default === "function"
+	) {
+	if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+	__vue_options__ = __vue_exports__ = __vue_exports__.default
+	}
+	if (typeof __vue_options__ === "function") {
+	  __vue_options__ = __vue_options__.options
+	}
+	__vue_options__.__file = "/Users/anthony/Documents/Personal/Projects/2017/portfolio/code/client/src/components/contact.vue"
+	__vue_options__.render = __vue_template__.render
+	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+	/* hot reload */
+	if (false) {(function () {
+	  var hotAPI = require("vue-hot-reload-api")
+	  hotAPI.install(require("vue"), false)
+	  if (!hotAPI.compatible) return
+	  module.hot.accept()
+	  if (!module.hot.data) {
+	    hotAPI.createRecord("data-v-6a42d82b", __vue_options__)
+	  } else {
+	    hotAPI.reload("data-v-6a42d82b", __vue_options__)
+	  }
+	})()}
+	if (__vue_options__.functional) {console.error("[vue-loader] contact.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+	module.exports = __vue_exports__
+
+
+/***/ },
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(14);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(9)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-6a42d82b!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./contact.vue", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-6a42d82b!./../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./contact.vue");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(8)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "\n.message {\n  color: blue;\n}\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 15 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	//
+	//
+	//
+	//
+	//
+	//
+
+	exports.default = {
+	  data: function data() {
+	    return {
+	      msg: 'Contact Page!'
+	    };
+	  }
+	};
+
+/***/ },
+/* 16 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', [_c('div', {
+	    staticClass: "message"
+	  }, [_vm._v(_vm._s(_vm.msg))])])
+	},staticRenderFns: []}
+	module.exports.render._withStripped = true
+	if (false) {
+	  module.hot.accept()
+	  if (module.hot.data) {
+	     require("vue-hot-reload-api").rerender("data-v-6a42d82b", module.exports)
 	  }
 	}
 
