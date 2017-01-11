@@ -1,27 +1,3 @@
-// import Vue from 'vue'
-// import VueRouter from 'vue-router'
-// import VueResource from 'vue-resource'
-//
-// import routes from './routes/config'
-// import Home from './components/home.vue'
-//
-// Vue.use(VueRouter);
-// Vue.use(VueResource);
-//
-//
-// // var Home    = Vue.component('home', require('./components/home.vue'));
-// // var Contact = Vue.component('contact', require('./components/contact.vue'));
-//
-// const router = new VueRouter({
-//     routes: routes,
-//     mode: 'history',
-//     render: h => h(Home),
-// });
-//
-// const app = new Vue({
-//     router: router
-// }).$mount('#app');
-
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
