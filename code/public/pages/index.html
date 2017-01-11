@@ -9,22 +9,51 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <h1>Foundation Woot Woot!!</h1>
-
     <div id="app">
-        <ul>
-            <li><router-link to="/">Home</router-link></li>
-            <li><router-link to="/contact">Contact</router-link></li>
-        </ul>
-        <router-view></router-view>
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="callout" style="margin-top: 20px;">
+                    <a><router-link to="/">Home</router-link></a>
+                    <a style="float: right;"><router-link to="/contact">Contact</router-link></a>
+                </div>
+            </div>
+            <br>
+            <div class="large-3 columns">
+                <div id="sidePane" class="callout" style="height: 600px">
+                    <h5>Anthon Scinocco</h5>
+                    <h6>Profile Picture</h6>
+                    <li>Github</li>
+                    <li>LinkedIn</li>
+                    <li>Resume</li>
+                    <li>email</li>
+                </div>
+            </div>
+            <div class="large-9 columns">
+                <div id="aboutMe" class="callout" style="height: 600px">
+                    <br><!--temp-->
+                    <h3>About Me</h3>
+                    <br><!--temp-->
+                    <p>
+                        Phasellus augue leo, dictum in magna ut, volutpat fermentum orci. Pellentesque blandit porttitor erat non porttitor. Donec risus sapien, tempor ut est at, faucibus dictum lorem. Maecenas sit amet elementum nisl, eu hendrerit diam. Proin id nisi mauris. Nam ac maximus turpis. Phasellus posuere in massa at consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam ullamcorper, velit sed pulvinar pulvinar, magna dolor consequat purus, sed aliquet lorem urna at metus. Vivamus quis ipsum bibendum, porttitor erat vitae, fringilla odio. Sed sollicitudin, est at bibendum accumsan, massa orci finibus dolor, ut varius turpis nisi et massa.
+                        Donec eu purus convallis, vulputate purus in, porttitor massa. Sed dignissim blandit tortor, eu cursus dolor interdum in. Ut iaculis, nibh eu faucibus scelerisque, risus sapien egestas leo, ultricies dictum orci sapien non lectus. Integer tincidunt elit at ipsum fringilla, eu facilisis sapien porttitor. Nunc cursus erat sed consequat pulvinar. Phasellus et vulputate mi. Etiam blandit mi eget aliquam commodo. Nullam consequat nulla eu eros molestie, congue aliquet risus feugiat. Donec id dictum mi. Nunc velit mauris, sodales id dolor eget, tempus suscipit nisi. Aliquam sed mattis eros. Fusce molestie lacinia metus in pharetra. Praesent vel vehicula est, ac scelerisque ex. Nullam ligula est, porta in auctor a, hendrerit non nunc. Mauris eget mi neque. Aliquam congue lobortis purus ac porttitor.
+                        <router-view></router-view>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="callout">
+                    <h5>Footer</h5>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/foundation/vendor/jquery.js"></script>
     <script src="js/foundation/vendor/what-input.js"></script>
     <script src="js/foundation/vendor/foundation.js"></script>
     <script src="js/foundation/app.js"></script>
-
     <script src="js/portfolio/dist/build.js"></script>
-
 </body>
 </html>
