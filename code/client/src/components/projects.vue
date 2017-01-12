@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>About Me</h3>
+        <h3>Projects</h3>
         <br>
         <p>
             Nullam dui turpis, consectetur ut fermentum ut, sagittis a urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed commodo at nisl non sodales. Vivamus varius urna a molestie lacinia. Donec pretium purus nec nulla accumsan, ut tempus libero blandit. Vestibulum rutrum tincidunt eleifend. Phasellus id sem ornare, molestie eros sed, bibendum mi. Morbi porttitor bibendum mauris, at elementum risus. Nulla eget elementum sem, id suscipit diam. Etiam gravida dolor id nibh bibendum, et placerat lorem malesuada. Donec pretium et diam scelerisque convallis.
