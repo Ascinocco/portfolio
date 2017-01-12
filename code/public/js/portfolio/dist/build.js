@@ -12523,7 +12523,7 @@
 
 
 	// module
-	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+	exports.push([module.id, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 	// exports
 
@@ -12821,6 +12821,42 @@
 	//
 	//
 	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
 
 	exports.default = {
 	  data: function data() {
@@ -12835,10 +12871,78 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-	  return _c('div', [_c('div', {
-	    staticClass: "message"
-	  }, [_vm._v(_vm._s(_vm.msg))])])
-	},staticRenderFns: []}
+	  return _vm._m(0)
+	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('div', [_c('form', {
+	    staticClass: "form-horizontal"
+	  }, [_c('fieldset', [_c('h3', [_vm._v("Reach Out!")]), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
+	    staticClass: "form-group"
+	  }, [_c('label', {
+	    staticClass: "col-md-2 control-label",
+	    attrs: {
+	      "for": "inputEmail"
+	    }
+	  }, [_vm._v("Email")]), _vm._v(" "), _c('div', {
+	    staticClass: "col-md-10"
+	  }, [_c('input', {
+	    staticClass: "form-control",
+	    attrs: {
+	      "type": "email",
+	      "name": "email",
+	      "id": "inputEmail",
+	      "placeholder": "Email"
+	    }
+	  })])]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group"
+	  }, [_c('label', {
+	    staticClass: "col-md-2 control-label",
+	    attrs: {
+	      "for": "inputName"
+	    }
+	  }, [_vm._v("Name")]), _vm._v(" "), _c('div', {
+	    staticClass: "col-md-10"
+	  }, [_c('input', {
+	    staticClass: "form-control",
+	    attrs: {
+	      "type": "text",
+	      "name": "email",
+	      "id": "inputName",
+	      "placeholder": "Name"
+	    }
+	  })])]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group"
+	  }, [_c('label', {
+	    staticClass: "col-md-2 control-label",
+	    attrs: {
+	      "for": "textAreaMessage"
+	    }
+	  }, [_vm._v("Message")]), _vm._v(" "), _c('div', {
+	    staticClass: "col-md-10"
+	  }, [_c('textarea', {
+	    staticClass: "form-control",
+	    attrs: {
+	      "rows": "3",
+	      "id": "textAreaMessage",
+	      "name": "message"
+	    }
+	  }), _vm._v(" "), _c('span', {
+	    staticClass: "help-block"
+	  }, [_vm._v("A longer block of help text that breaks onto a new line and may extend beyond one line.")])])]), _vm._v(" "), _c('div', {
+	    staticClass: "form-group"
+	  }, [_c('div', {
+	    staticClass: "col-md-10 col-md-offset-2"
+	  }, [_c('button', {
+	    staticClass: "btn btn-default",
+	    attrs: {
+	      "type": "button"
+	    }
+	  }, [_vm._v("Cancel")]), _vm._v(" "), _c('button', {
+	    staticClass: "btn btn-primary",
+	    attrs: {
+	      "type": "submit"
+	    }
+	  }, [_vm._v("Send")])])])])])])
+	}]}
 	module.exports.render._withStripped = true
 	if (false) {
 	  module.hot.accept()
