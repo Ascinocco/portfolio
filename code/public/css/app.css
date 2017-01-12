@@ -1,3 +1,10 @@
+body {
+    background-image: url('/img/background/mb-bg-fb-09.png');
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+
 .portfolio-navbarRaised {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
